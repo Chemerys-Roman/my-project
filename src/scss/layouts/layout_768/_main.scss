@@ -1,0 +1,113 @@
+//----------------------------CAR-TYPES----------------------
+.car-types-container {
+    display: flex;
+    &>.car-types-title-container {
+        flex-basis: 60%;
+    }
+    &>.slider {
+        flex-basis: auto;
+    }
+}
+
+.car-types-title-container {}
+
+//---------------------------------SEARCH--------------------
+.option-searching {
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.option-searching__item-box {
+    position: relative;
+    flex-basis: 20%;
+}
+
+.option-searching__item_container {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 10px;
+    z-index: 10;
+}
+
+.option-searching__button-container {
+    flex-basis: 15%;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+//---------------------------------RENT&SELL-----------------
+.bunner {
+    margin: 200px 0 2rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bunner-intro-title {
+    display: block;
+}
+
+.bunner-intro-button {
+    display: block;
+}
+
+.bunner-intro {
+    display: block;
+}
+
+.bunner__sell {
+    flex-basis: 45%;
+}
+
+.bunner__rent {
+    flex-basis: 45%;
+    background-color: white;
+}
+
+//-----------------------------------------------------------
+.stock-timer__item {
+    width: 150px;
+    font-size: 60px;
+}
+
+.title-container {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &>strong {
+        flex-basis: 40%;
+        padding: 1rem;
+        text-align: end;
+    }
+    &>p {
+        border-left: 1px solid $baseBgColor;
+        text-align: start;
+        padding: 2rem;
+        margin: 0;
+        flex-basis: 40%;
+    }
+}
+
+//--------------------FOOTER-----------------------------
+.social-galary {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__item_photo-galary {
+    flex-basis: 305px;
+    flex-grow: 1;
+}
+
+.footer__item_lastest-news {
+    flex-basis: 305px;
+    flex-grow: 1;
+}
+
+.footer__item_contact-info {
+    flex-basis: 305px;
+}

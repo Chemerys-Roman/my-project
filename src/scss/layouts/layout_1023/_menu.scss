@@ -1,0 +1,136 @@
+.header-container {
+    height: 100px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: transparent;
+}
+
+.darker {
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+.header-search-container {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+    top: 50px;
+    right: 50px;
+    width: 40%;
+}
+
+.header-search-img {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    width: 30px;
+}
+
+.header-search-input {}
+
+.header-container__logo-container {
+    order: 1;
+    max-width: 100px;
+    flex-grow: 1;
+    margin-right: auto;
+}
+
+.header-container__logo-container img {}
+
+.header-container__bureger {
+    order: 2;
+    margin: 0 1rem;
+    // flex: 0 3 5%;
+    // display: none;
+}
+
+.burger__line {
+    height: 2px;
+}
+
+.header-container__cart-container {
+    order: 3;
+    // flex: 0 3 5%;
+}
+
+.menu-container {
+    left: 100%;
+    top: 0;
+    transform: translateX(0);
+    overflow: scroll;
+}
+
+.menu-container-active {
+    transform: translateX(-100%);
+}
+
+.main-menu-container {
+    display: none;
+}
+
+.main-menu-option_account {
+    display: block;
+}
+
+.main-menu-option_setting {
+    display: block;
+}
+
+.main-menu-option_nav {
+    &>ul {
+        display: none;
+    }
+}
+
+.main-menu-option_nav-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.nav-menu-2 {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    & a {
+        text-transform: uppercase;
+        border-bottom: 2px solid white;
+        &:hover {
+            font-weight: bold;
+            color: $baseBgColor;
+            border-color: $baseBgColor;
+        }
+    }
+}
+
+.menu-2-level-1__item {}
+
+.menu-level-1__item_features {}
+
+.menu-2-level-2 {
+    display: none;
+}
+
+.menu-2-level-2-features {}
+
+.menu-2-level-2__item {}
+
+.menu-2-level-3 {}
+
+.menu-2-level-3__item {}
+
+.menu-2-level-1__item_store {}
+
+.menu-level-2-store {}
+
+.menu-2-level-1__item_recipes {}
+
+.menu-2-level-2-recipes {}

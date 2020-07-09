@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $baseFontSize;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $baseFontFamily;
+    width: 100%;
+    position: relative;
+}
+
+strong {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+p {
+    display: block;
+    color: $baseBgColor;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    width: 100%;
+    margin-bottom: 2rem;
+    font-family: $secondaryFontFamily;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+h1 {
+    font-weight: $mediumFontWeight;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    min-width: 100%;
+}

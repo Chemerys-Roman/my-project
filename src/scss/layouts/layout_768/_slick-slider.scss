@@ -1,0 +1,101 @@
+.teasing-slider .slick-next {
+    position: absolute;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    z-index: 100;
+    width: 100px;
+    cursor: pointer;
+    padding: 0 0 0 50px;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    transition: all 0.2s linear;
+    &:hover {
+        padding: 0 50px 0 0;
+        transition: all 0.2s linear;
+    }
+    &::before {
+        content: "";
+        z-index: 100;
+        top: 50%;
+        right: 50px;
+        transform: translateY(-50%);
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 3px;
+        background-color: #ffffff;
+        opacity: 0.5;
+        transition: all 0.2s linear;
+    }
+    &:hover:before {
+        right: 0;
+        transition: all 0.2s linear;
+    }
+    &::after {
+        content: "";
+        z-index: 100;
+        top: 50%;
+        right: 0;
+        transform: translate(100%, -50%);
+        display: block;
+        position: absolute;
+        border: 10px solid transparent;
+        border-left: 10px solid white;
+        opacity: 0.5;
+    }
+}
+
+.teasing-slider .slick-prev {
+    position: absolute;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    z-index: 100;
+    width: 100px;
+    padding-right: 50px;
+    padding-left: 0;
+    cursor: pointer;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    transition: all 0.2s linear;
+    &:hover {
+        padding-right: 0;
+        padding-left: 50px;
+        transition: all 0.2s linear;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        left: 50px;
+        transform: translateY(-50%);
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: #ffffff;
+        opacity: 0.5;
+        transition: all 0.2s linear;
+    }
+    &:hover:after {
+        left: 0;
+        transition: all 0.2s linear;
+    }
+    &::before {
+        content: "";
+        z-index: 100;
+        top: 50%;
+        left: 0;
+        transform: translate(-100%, -50%);
+        display: block;
+        position: absolute;
+        border: 10px solid transparent;
+        border-right: 10px solid white;
+        opacity: 0.5;
+    }
+}

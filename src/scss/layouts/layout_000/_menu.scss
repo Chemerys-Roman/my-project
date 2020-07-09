@@ -1,0 +1,204 @@
+    .header-container {
+        padding: 0 2rem 0 1rem;
+        margin: 0;
+        width: 100%;
+        height: 50px;
+        background-color: $baseBgColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header-container__logo-container {
+        position: relative;
+        width: auto;
+        height: 100%;
+    }
+    
+    .header-container__logo-container img {
+        height: 100%;
+        width: auto;
+    }
+    
+    .header-container__bureger {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .burger__line {
+        width: 100%;
+        height: 3px;
+        background-color: white;
+    }
+    
+    .burger__button {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+    
+    .header-container__cart-container {
+        position: relative;
+        width: auto;
+        max-height: 45px;
+    }
+    
+    .purchases-number {
+        position: absolute;
+        color: $baseBgColor;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+        visibility: hidden;
+        z-index: 5;
+        bottom: 70%;
+        left: 70%;
+        background-color: white;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+    }
+    
+    .menu-container {
+        position: absolute;
+        font-family: $secondaryFontFamily;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        background-color: white;
+        width: 280px;
+        height: 100%;
+        padding: 1rem;
+        z-index: 1000;
+        overflow: scroll;
+        transform: translateX(-100%);
+        transition: all 200ms linear;
+    }
+    
+    .menu-container-active {
+        transform: translateX(0);
+        transition: all 200ms linear;
+    }
+    
+    .active-menu-darker {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        background-color: rgba(black, 0.2);
+        display: none;
+    }
+    
+    .main-menu-container {
+        height: 40px;
+    }
+    
+    .main-menu {
+        left: 0;
+        right: 0;
+        color: black;
+        font-size: 1rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-transform: uppercase;
+        &__item {
+            flex-grow: 1;
+            flex-basis: auto;
+            padding: 5px 0 10px 0;
+            text-align: center;
+            border-bottom: 2px solid #e2e2e2;
+        }
+    }
+    
+    .main-menu-option_nav-2 {
+        display: none;
+    }
+    
+    .active-menu {
+        border-bottom: 2px solid #747474;
+    }
+    
+    .main-menu-option {
+        display: none;
+    }
+    
+    .menu-level-1 {
+        text-transform: uppercase;
+        font-size: 1rem;
+        // font-weight: bold;
+        color: #535353;
+        &__item>a {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px 0;
+            justify-content: space-between;
+        }
+    }
+    
+    .setting-menu>li>a {
+        display: block;
+    }
+    
+    .pointer {
+        position: absolute;
+        z-index: -1;
+        top: 50;
+        right: 0;
+        width: 15px;
+        height: 15px;
+        transition: all 100ms linear;
+    }
+    
+    .pointer-rotate {
+        transition: all 100ms linear;
+        transform: rotate(180deg);
+    }
+    
+    .menu-level-2 {
+        flex-basis: 100%;
+        padding-bottom: 1rem;
+        display: none;
+    }
+    
+    .menu-level-2__item {
+        font-family: $baseFontFamily;
+        font-weight: bold;
+        color: black;
+        padding-top: 1rem;
+        max-width: 100%;
+        // border-bottom: 2px solid #999999;
+    }
+    
+    .menu-level-3 {
+        font-weight: 400;
+        font-family: $secondaryFontFamily;
+        color: #535353;
+        text-transform: initial;
+    }
+    
+    .flag-container {
+        width: 20px;
+        height: 20px;
+        margin-right: 1rem;
+        display: inline-block;
+    }
+    
+    .menu-level-3__item {
+        padding: 5px 0;
+        max-width: 100%;
+        &>a {
+            max-width: 250px;
+        }
+    }

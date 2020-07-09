@@ -1,0 +1,63 @@
+    .posts-slider-wide>.slick-list>.slick-track>div {
+        margin: 10px;
+    }
+    
+    .new-cars-slider-wide>.slick-list>.slick-track>div {
+        margin: 10px;
+    }
+    
+    .product-slider-wide>.slick-list>.slick-track>div {
+        margin: 10px;
+    }
+    
+    .product-slider-wide {
+        position: relative;
+        &>.slick-prev {
+            cursor: pointer;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-125%, -50%);
+            font-size: 28px;
+            font-weight: bold;
+        }
+        &>.slick-next {
+            cursor: pointer;
+            position: absolute;
+            font-size: 28px;
+            font-weight: bold;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(25%, -50%);
+            font-size: 28px;
+            font-weight: bold;
+        }
+    }
+    
+    .posts-slider-wide>.slider__item {
+        width: 100%;
+    }
+    
+    .post__img {
+        margin: auto;
+        min-width: 400px;
+    }
+    
+    .post__date {
+        font-size: 12px;
+        margin-bottom: 1rem;
+        text-align: start;
+    }
+    
+    .post__title {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 10px;
+    }
+    
+    .post__content {
+        color: #999999;
+        margin: 1rem;
+    }
