@@ -58,9 +58,10 @@
 }
 
 .menu-container {
+    display: none;
     left: 100%;
     top: 0;
-    transform: translateX(0);
+    transform: translateX(-100);
     overflow: scroll;
 }
 
